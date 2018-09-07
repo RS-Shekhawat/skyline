@@ -1,0 +1,27 @@
+<div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
+  <div class="logo">
+    <span class="simple-text logo-normal">FM Solutions</span>
+  </div>
+  <div class="sidebar-wrapper">
+    <ul class="nav">
+      <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+        <a class="nav-link" routerLink="/admin">
+          <i class="material-icons">dashboard</i>
+          <p>Dashboard</p>
+        </a>
+      </li>
+      <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+        <a class="nav-link" routerLink="/admin/users/transport">
+          <i class="material-icons">local_shipping</i>
+          <p>Carriers</p>
+        </a>
+      </li>
+      <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+        <a class="nav-link" routerLink="/admin/users/charter">
+          <i class="material-icons">airplanemode_active</i>
+          <p>Charters</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

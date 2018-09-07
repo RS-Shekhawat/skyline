@@ -1,0 +1,446 @@
+.fz14, nav.bg-light .nav-link {
+  font-size: 14px;
+}
+
+.fz15 {
+  font-size: 15px;
+}
+
+.fz16, .topBtns li a, .loginBlock .forgetPass a, .custom-radio label, .footer-area-wrap .widget ul.footerLinks li a {
+  font-size: 16px;
+}
+
+.fz18, .blueBtn, nav.bg-light .nav-link.blueBtn, .loginBlock .form-group i {
+  font-size: 18px;
+}
+
+.fz20, .loginBlock .loginTitle {
+  font-size: 20px;
+}
+
+.fz22 {
+  font-size: 22px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.blueBtn {
+  cursor: pointer;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2576f7+0,85b3fd+100 */
+  background: #2576f7;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#2576f7), to(#85b3fd));
+  background: linear-gradient(to right, #2576f7 0%, #85b3fd 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2576f7', endColorstr='#85b3fd',GradientType=1 );
+  /* IE6-9 */
+  color: #fff;
+  display: inline-block;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.blueBtn.blackBtn {
+  background: #4a4a4a;
+}
+
+.blueBtn.blackBtn:hover {
+  background: #5d1ebb;
+  color: #fff;
+}
+
+.blueBtn:hover {
+  background: #5d1ebb;
+  color: #fff;
+  text-decoration: none;
+}
+
+.custom-control-input:focus ~ .custom-control-label::before {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+  background: #fff;
+}
+
+.custom-radio .custom-control-input:checked ~ .custom-control-label:after {
+  outline: none;
+  content: '\f269';
+  color: #5d1ebb;
+  background-image: none !important;
+  font: normal normal normal 20px/1 'Material-Design-Iconic-Font';
+}
+
+@font-face {
+  font-family: 'Calibri';
+  src: url("../fonts/Calibri-Bold.woff2") format("woff2"), url("../fonts/Calibri-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Calibri';
+  src: url("../fonts/Calibri.woff2") format("woff2"), url("../fonts/Calibri.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.transition, .blueBtn, a, .loginBlock .form-control {
+  transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+}
+
+body {
+  font-family: 'Calibri';
+  font-weight: normal;
+}
+
+.topBtns {
+  display: inline-block;
+  padding-top: 20px;
+}
+
+.topBtns li {
+  list-style: none;
+  display: inline;
+}
+
+.topBtns li a {
+  display: inline-block;
+  padding-left: 60px;
+  color: #5d1ebb;
+  font-weight: bold;
+}
+
+.topBtns li a.student {
+  color: #c11993;
+}
+
+nav.bg-light {
+  background: #fff !important;
+}
+
+nav.bg-light .nav-link {
+  color: #333333;
+  letter-spacing: 0.7px;
+}
+
+nav.bg-light .nav-link.blueBtn {
+  color: #fff;
+  display: inline-block;
+  padding: 12px 15px;
+  border-radius: 4px;
+}
+
+.bb1 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.userBox {
+  border-radius: 10px;
+  background-color: #ffffff;
+  background-image: url(../img/login-bg.png);
+  min-height: 600px;
+  -webkit-box-shadow: -0.4px 0.9px 18px 0 rgba(1, 1, 1, 0.17);
+          box-shadow: -0.4px 0.9px 18px 0 rgba(1, 1, 1, 0.17);
+  padding: 30px;
+  background-repeat: no-repeat;
+  background-position: 0 bottom;
+}
+
+.navbar-nav li {
+  padding-top: 10px;
+}
+
+.loginBlock .loginTitle {
+  margin-bottom: 30px;
+  color: #4377f7;
+  font-weight: bold;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.loginBlock .loginTitle span {
+  background: #fff;
+  padding: 5px;
+  z-index: 1;
+  position: relative;
+}
+
+.loginBlock .loginTitle:after {
+  content: '';
+  background-color: rgba(1, 1, 1, 0.17);
+  width: 100%;
+  height: 1px;
+  display: block;
+  position: absolute;
+  top: 50%;
+}
+
+.loginBlock .form-group {
+  position: relative;
+}
+
+.loginBlock .form-group i {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+  color: #999999;
+}
+
+.loginBlock .form-group:focus i {
+  color: #000;
+}
+
+.loginBlock .form-control {
+  opacity: 0.3;
+  border-color: #b5b5b5;
+  padding-left: 35px;
+  height: 40px;
+}
+
+.loginBlock .form-control:focus {
+  opacity: 1;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.loginBlock .form-control .form-contro::focus ~ i {
+  opacity: 1;
+  color: #000;
+}
+
+.loginBlock .form-control .customSelect {
+  width: 100%;
+  background: #fff;
+}
+
+.loginBlock .forgetPass {
+  padding-top: 18px;
+  color: #5d1ebb;
+}
+
+.loginBlock .forgetPass a {
+  font-weight: bold;
+  color: #5d1ebb;
+}
+
+.loginBlock .forgetPass span {
+  padding: 0 8px 0 3px;
+}
+
+.custom-radio label {
+  font-weight: bold;
+}
+
+.custom-radio label a {
+  color: #5d1ebb;
+}
+
+footer {
+  margin-top: 100px;
+}
+
+footer .eualColum {
+  -webkit-transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  padding: 104px 0px 99px 0px;
+}
+
+footer .eualColum.blue {
+  background-color: #53b1c8;
+}
+
+footer .eualColum.blue .elementor-icon {
+  color: #90edfd;
+  border-color: #90edfd;
+}
+
+footer .eualColum.yellow {
+  background-color: #edbf47;
+}
+
+footer .eualColum.yellow .elementor-icon {
+  color: #fff;
+  border-color: #fff;
+}
+
+footer .eualColum.orange {
+  background-color: #eb774c;
+}
+
+footer .eualColum.orange .elementor-icon {
+  color: #fec19e;
+  border-color: #fec19e;
+}
+
+footer .eualColum .elementor-icon-box-wrapper {
+  text-align: left;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding: 0 30px;
+}
+
+footer .eualColum .elementor-icon-box-icon {
+  margin-right: 25px;
+}
+
+footer .eualColum .elementor-icon {
+  font-size: 60px;
+}
+
+footer .eualColum .elementor-icon-box-content h5 {
+  font-size: 1.25rem;
+  letter-spacing: 3.1px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+footer .eualColum .elementor-icon-box-content p {
+  color: #fff;
+  font-size: 26px;
+}
+
+footer .eualColum .elementor-icon-box-content p a {
+  color: #fff;
+}
+
+.footer-area-wrap {
+  background-color: #495052;
+}
+
+.footer-area-wrap.invert {
+  color: #b3bbc1;
+}
+
+.footer-area-wrap.invert a {
+  color: #fff;
+}
+
+.footer-area-wrap .widget {
+  margin-top: 20px;
+  margin-bottom: 25px;
+  line-height: 1.74;
+}
+
+.footer-area-wrap .widget ul {
+  margin-bottom: 0;
+  padding: 0;
+  margin-left: 0;
+  list-style: none;
+}
+
+.footer-area-wrap .widget ul.footerLinks li a {
+  color: #b3bbc1;
+}
+
+.footer-area-wrap .widget ul.footerLinks li a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-area-wrap .widget .form-group {
+  position: relative;
+}
+
+.footer-area-wrap .widget .form-group .form-control {
+  color: #b3bbc1;
+  padding-right: 50px;
+  background-color: #404547;
+  padding-top: calc( 11px - ((14px - 14px) * 1.5)/2);
+  padding-bottom: calc( 11px - ((14px - 14px) * 1.5)/2);
+  border: none;
+  font-size: 16px;
+}
+
+.footer-area-wrap .widget-title {
+  margin-bottom: 26px;
+  margin-top: 5px;
+  color: #b3bbc1;
+  font-size: 20px;
+  letter-spacing: 0.19em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.footer-area {
+  padding: 68px 0 36px;
+}
+
+.footer-area .socialItems {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-area .socialItems li {
+  display: inline-block;
+}
+
+.footer-area .socialItems li a {
+  background-color: #616669;
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  line-height: 36px;
+  margin-right: 10px;
+}
+
+.footer-area .socialItems li a:hover {
+  background: #5d1ebb;
+}
+
+.footer-area .form-group .zmdi {
+  position: absolute;
+  right: 15px;
+  font-size: 30px;
+  top: 9px;
+  color: #797979;
+}
+
+.footer-area .form-group .zmdi:hover {
+  color: #5d1ebb;
+}
+
+.footer-area .form-group .form-control {
+  height: 45px;
+}
+
+.footer {
+  background-color: #404547;
+}
+
+.footer .footer-container {
+  padding: 50px 0;
+}
+
+.footer .footer-copyright {
+  text-align: right;
+  color: #b3bbc1;
+}
+/*# sourceMappingURL=custom.css.map */

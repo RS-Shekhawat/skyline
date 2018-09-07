@@ -1,0 +1,152 @@
+// @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700");
+// @import '~material-design-icons/iconfont/material-icons.css';
+
+// @import "~bootstrap/scss/functions";
+// @import "~bootstrap/scss/variables";
+// @import "~bootstrap/scss/mixins";
+// @import "~ngx-toastr/toastr-bs4-alert";
+
+// .input-group .has-danger,.form-group .has-danger {
+//   .form-control {
+//     &::placeholder {
+//       color: #f44336;
+//     }
+//   }
+// }
+
+
+// /*Tables*/
+// table.dataTable thead .sorting:after, table.dataTable thead .sorting:before, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_asc_disabled:before, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_desc:before, table.dataTable thead .sorting_desc_disabled:after, table.dataTable thead .sorting_desc_disabled:before {
+//   position: absolute;
+//   bottom: .9em;
+//   display: block;
+//   opacity: .3;
+// }
+// table.dataTable thead .sorting_asc::before, table.dataTable thead .sorting_desc::after {
+//   opacity: 1;
+// }
+// table.dataTable thead .sorting::before, table.dataTable thead .sorting_asc::before, table.dataTable thead .sorting_asc_disabled::before, table.dataTable thead .sorting_desc::before, table.dataTable thead .sorting_desc_disabled::before {
+//   top: 2px;
+//   right: 1em;
+//   content: "\2191";
+// }
+// table.dataTable thead .sorting::after, table.dataTable thead .sorting_asc::after, table.dataTable thead .sorting_asc_disabled::after, table.dataTable thead .sorting_desc::after, table.dataTable thead .sorting_desc_disabled::after {
+//    top: 2px;
+//    right: .5em;
+//    content: "\2193";
+//  }
+// table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTable thead .sorting_asc_disabled, table.dataTable thead .sorting_desc, table.dataTable thead .sorting_desc_disabled {
+//   cursor: pointer;
+//   position: relative;
+// }
+// .dataTable>tbody>tr>td, .dataTable>tbody>tr>th, .dataTable>tfoot>tr>td, .dataTable>tfoot>tr>th, .dataTable>thead>tr>td, .dataTable>thead>tr>th {
+//   padding: 5px!important;
+// }
+// div.dataTables_wrapper div.dataTables_filter {
+//   text-align: right;
+// }
+
+// /*Pagination*/
+// div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+//   margin: 2px 0;
+//   white-space: nowrap;
+//   justify-content: flex-end;
+// }
+// .pagination {
+//   display: flex;
+//   padding-left: 0;
+// }
+// .breadcrumb, .pagination {
+//   border-radius: .25rem;
+//   list-style: none;
+// }
+// .pagination>.page-item>.page-link, .pagination>.page-item>span {
+//   border: 0;
+//   border-radius: 30px!important;
+//   transition: all .3s;
+//   padding: 0 11px;
+//   margin: 0 3px;
+//   min-width: 30px;
+//   height: 30px;
+//   line-height: 30px;
+//   color: #999;
+//   font-weight: 400;
+//   font-size: 12px;
+//   text-transform: uppercase;
+//   background: 0 0;
+//   text-align: center;
+// }
+// .page-item.disabled .page-link {
+//   color: #6c757d;
+//   pointer-events: none;
+//   cursor: auto;
+//   background-color: transparent;
+//   border-color: #dee2e6;
+// }
+
+// .pagination {
+//   > .page-item.active {
+//     > span,
+//     > span:focus,
+//     > span:hover {
+//       background-color: #9c27b0;
+//       border-color: #9c27b0;
+//       color: #fff;
+//       box-shadow: 0 4px 5px 0 rgba(156, 39, 176, .14), 0 1px 10px 0 rgba(156, 39, 176, .12), 0 2px 4px -1px rgba(156, 39, 176, .2);
+
+//     }
+//   }
+// }
+
+// /*Nav Pills*/
+// .nav-pills .nav-item .nav-link.active {
+//   color: #fff;
+//   background-color: #9c27b0;
+//   box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px rgba(156,39,176,.4);
+// }
+// .nav-pills .nav-item .nav-link {
+//   line-height: 24px;
+//   text-transform: uppercase;
+//   font-size: 12px;
+//   font-weight: 500;
+//   min-width: 100px;
+//   text-align: center;
+//   color: #555;
+//   transition: all .3s;
+//   padding: 10px 15px;
+// }
+// .nav-pills .nav-item i {
+//   display: block;
+//   font-size: 30px;
+//   padding: 15px 0;
+// }
+
+// /*Floating Labels*/
+
+// .bmd-form-group {
+
+//   [class*=' bmd-label'].bmd-label-floating, [class^=bmd-label].bmd-label-floating {
+//     will-change: left, top, contents;
+//     margin: 0;
+//     line-height: 1.4;
+//     font-weight: 400;
+//   }
+
+//   .bmd-label-floating,
+//   .bmd-label-placeholder {
+//     top: .6125rem;
+//   }
+
+//   [class*=' bmd-label'],[class^=bmd-label] {
+//     position: absolute;
+//     pointer-events: none;
+//     transition: .3s ease all;
+//   }
+
+//   .checkbox label, .radio label, label {
+//     font-size: .875rem;
+//   }
+
+// }
+
+

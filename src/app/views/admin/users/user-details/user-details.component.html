@@ -1,0 +1,96 @@
+<div class="row">
+  <div class="col-md-12">
+    <ul class="nav nav-pills nav-pills-primary nav-pills-icons justify-content-center" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link show" data-toggle="tab" [ngClass]="{active: mode == 'view'}" (click)="setMode('view')" role="tablist">
+          <i class="material-icons">visibility</i> View
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" [ngClass]="{active: mode == 'edit'}" (click)="setMode('edit')" role="tablist">
+          <i class="material-icons">edit</i> Edit
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="col-md-12">
+    <div [hidden]="mode != 'view'" class="card">
+      <div class="card-header card-header-primary">
+        <h4 class="card-title">View Details</h4>
+      </div>
+      <div class="card-body">
+
+        <div class="table-responsive">
+          <table class="table table-hover">
+            <tbody>
+            <tr>
+              <td>Name</td>
+              <td>{{user?.user_name}}</td>
+            </tr>
+            <tr>
+              <td>Email Address</td>
+              <td>{{user?.email}}</td>
+            </tr>
+            <tr>
+              <td>Phone Number</td>
+              <td>{{user?.phone}}</td>
+            </tr>
+            <tr>
+              <td>Type</td>
+              <td>{{user?.role_id | roleLabel}}</td>
+            </tr>
+            <tr>
+              <td>Status</td>
+              <td><app-admin-status [status]="user?.status"></app-admin-status></td>
+            </tr>
+            <tr>
+              <td>Registration Date</td>
+              <td>{{user?.created | date}}</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+    <div [hidden]="mode != 'edit'" class="card">
+      <div class="card-header card-header-primary">
+        <h4 class="card-title">Edit Details</h4>
+      </div>
+      <div class="card-body">
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group bmd-form-group has-danger"
+               [ngClass]="validationService.classes(submitAttempted, form.controls.user_name)"
+              >
+                <label class="bmd-label-floating">Name</label>
+                <input formControlName="user_name" type="text" class="form-control">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group bmd-form-group has-danger"
+                 [ngClass]="validationService.classes(submitAttempted, form.controls.email)"
+              >
+                <label class="bmd-label-floating">Email Address</label>
+                <input formControlName="email" type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group bmd-form-group has-danger"
+                 [ngClass]="validationService.classes(submitAttempted, form.controls.phone)"
+              >
+                <label class="bmd-label-floating">Phone Number</label>
+                <input formControlName="phone" type="text" class="form-control">
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary pull-right">Update</button>
+          <div class="clearfix"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

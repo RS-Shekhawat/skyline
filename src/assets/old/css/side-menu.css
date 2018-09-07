@@ -1,0 +1,85 @@
+
+
+.mobileMenu {
+    display: block;
+    position: absolute;
+    right: 19px;
+    top: -9px;
+}
+
+a.nav {
+    float: right;
+    height: 6px;
+    padding-top: 36px;
+    position: relative;
+    width: 25px;
+    display:block;
+    z-index: 9;
+}
+a.nav span{display:block; position:absolute; top:22px; left:0; right:0; height:2px; background:#fff; transition: 0s 0.2s;}
+a.nav span:before, a.nav span:after{position: absolute; display:block; left:0; width:100%; height: 2px; background-color: #fff; content:"";}
+
+a.nav span::before{transition-property: top, transform;}
+a.nav span::after{transition-property: bottom, transform;}
+
+a.nav span::before{top:-6px;}
+a.nav span::after{bottom:-6px;}
+
+a.nav span:before, a.nav span:after{transition-duration: 0.3s, 0.3s; transition-delay: 0.3s, 0s;}
+
+a.nav.is-active{ z-index:9999;}
+a.nav.is-active span{background:none;}
+a.nav.is-active span::before{top: 0;  transform: rotate(45deg); -moz-transform: rotate(45deg); -webkit-transform: rotate(45deg); background-color: #000;}
+a.nav.is-active span::after{bottom: 0;    transform: rotate(-45deg); -moz-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); background-color: #000;}
+a.nav.is-active span::before, a.nav.is-active span::after{transition-delay: 0s, 0.3s;}
+
+
+.navigation-part{ 
+background: rgba(255,255,255,1);
+width:17em;
+right: -300px;
+/*z-index: 99999;*/
+position: fixed;
+top:0px;
+bottom: 0px;
+opacity: 0;
+transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-webkit-transition: all 0.5s ease;
+overflow-y: auto;  
+box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+max-height:100%;}
+.navigation-part ul{ margin:0px;     padding: 77px 0px 0 0;}
+.navigation-part ul li{ list-style:none;}
+.navigation-part ul li a{
+display: inline-block;
+width: 100%;
+font-size: 15px;
+color: #f04645;
+font-weight: normal;
+padding: 10px 15px;
+text-transform: none;
+box-sizing:border-box;
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;
+border-bottom: 1px solid #f04645;
+transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-webkit-transition: all 0.5s ease;}
+.navigation-part.is-active2{right:0px; opacity:1;}
+.navigation-part ul li a:hover{ text-decoration:none; background:#f04645; color:#fff;
+transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-webkit-transition: all 0.5s ease;}
+
+
+
+.overlay{position:fixed; top:0px; bottom:0px; left:0px; right:0px;  background-color: rgba(0, 0, 0, 0.2); display:none;}
+.overlay.active{ display:block;}
+
+@media (max-width:767px) {
+a.nav span{ background: #000;}
+a.nav span:before, a.nav span:after{background-color: #000;}
+}
+
+

@@ -1,0 +1,58 @@
+<div class="off-canvas-sidebar">
+  <div class="wrapper wrapper-full-page">
+    <div class="page-header signup-page header-filter">
+      <div class="container">
+        <div class="col-lg-4 col-md-6 col-sm-6 ml-auto mr-auto">
+          <form class="form" [formGroup]="form" (ngSubmit)="onSubmit()" >
+            <div class="card card-signup card-hidden">
+              <div class="card-header card-header-rose text-center">
+                <h4 class="card-title">Login</h4>
+              </div>
+              <div class="card-body ">
+                <span class="bmd-form-group">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="material-icons">email</i>
+                      </span>
+                    </div>
+                    <input formControlName="email" type="email"
+                       [ngClass]="{
+                          'form-control': true,
+                          'has-danger' : (submitAttempted || form.controls.email.dirty) && !form.controls.email.valid
+                       }"
+                       placeholder="Email"
+                    >
+                  </div>
+                </span>
+                <span class="bmd-form-group">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="material-icons">lock_outline</i>
+                      </span>
+                    </div>
+                    <input formControlName="password" type="password"
+                       [ngClass]="{
+                          'form-control': true,
+                          'has-danger' : (submitAttempted || form.controls.password.dirty) && !form.controls.password.valid
+                       }"
+                       placeholder="Password">
+                  </div>
+                </span>
+              </div>
+              <div class="card-footer justify-content-center">
+                <button type="submit" class="btn btn-rose btn-link btn-lg">Let's Go</button>
+              </div>
+            </div>
+          </form>
+
+          <div class="justify-content-center text-center">
+            <a routerLink="/admin/auth/forgot-password" class="btn btn-rose btn-link btn-lg">Forgot Password</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

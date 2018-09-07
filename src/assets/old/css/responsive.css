@@ -1,0 +1,118 @@
+@media (max-width:1100px) {
+  header .inrWrap{padding-right:0px;}
+  .loginSec .defaultBtn{    min-height: 35px;  padding: 0 10px; line-height: 35px; font-size: 16px; margin-right: 12px;}
+  .midContent{ padding-right: 25px}
+  .midContent .bnrText{    font-size: 25px;}
+  .midContent .bnrText .g-title{font-size: 48px;}
+  .bnrDetail{ padding-right: 0px;}
+  .process {padding-top: 18px;}
+  .process .processBlock {font-size: 15px;}
+  .access-form .submitBtn{    padding: 10px 14px;}
+  .access-form label{font-size: 16px;}
+}
+
+@media (max-width:990px) {
+/** Account Page **/
+ .page-container { padding-left:0px;}
+/*.page-container.pad-left{ padding-left:280px;} */
+.sidebar .sidebarInr{left: -280px; top:60px;}
+.sidebar .sidebarInr.show{ left: 0px;}
+.charter_Info .profile_Info .accountantInfo li{ display: block; word-wrap: break-word;}
+.charter_Info .profile_Info .accountantInfo li:after{border-right: none;}
+.searcInput:focus{width:130px;}
+.trackMap-main .map-personDetail ul li {     font-size: 15px;    padding-left: 30px;  }
+.submitBtn{
+  font-size: 14px;padding: 4px 19px;
+}
+}
+
+@media (max-width:767px) {
+
+  .inrWrap.d-flex {display: block !important;}
+  .navi {position: absolute;right: 0; top:-2px;}
+  .loginSec{text-align: center;}
+  .midContent {padding-right: 15px; padding-left: 15px; padding-top: 30px; max-width: 100%; padding-bottom: 60px;}
+  .fluid-container{ padding: 0 15px;}
+  body:before,  body:after{display:none;}
+  header .inrWrap .logo img {height: 45px;}
+  .loginSec .defaultBtn { min-height: 29px; padding: 0 7px;line-height: 29px; font-size: 14px; margin-right: 8px;}
+  .midContent .bnrText{font-size: 20px;}
+  .midContent .bnrText .g-title{font-size: 40px; line-height: 48px;}
+  .bnrDetail{margin-bottom: 0px; font-size: 15px; padding-top: 0px;}
+  .copyRight { font-size: 14px;text-align: center;padding: 15px; position: fixed; left: 0; right: 0; bottom: 0; background: #333; color: #fff; z-index: 2;}
+  .process .processBlock{padding-bottom:20px;}
+  .desktop{display:none;}
+  .mobile{display:block;}
+  .modal-header h4{font-size: 19px; line-height: normal; }
+  .modal-body .subTitle{line-height: normal; font-size: 15px;}
+  .modal-header {padding: 30px 15px 0 15px;}
+  .modal-body {padding: 0px 15px 30px 15px;}
+  .modal-body .checkmark{ height: 20px;width: 20px;}
+  .modal-body .checkbox{padding-left: 27px; font-size: 13px;}
+  .forgt_pwd {font-size: 12px;}
+  .login-btn{min-height: 47px;font-size: 17px; min-width: 100%;}
+  .signUpLink{font-size: 16px;    padding-top: 20px;}
+  .form-control{font-size: 16px;}
+  .row.pdt16{padding-top:9px;}
+  [type="radio"]:checked + label, [type="radio"]:not(:checked) + label{font-size: 15px;}
+  .form-group {margin-bottom: 19px;}
+  .charter_Info{border-right:none; margin-right: 0px; text-align: center;}
+  .charter_Info .profile_Img{ margin: 0 auto; position: inherit;}
+  .charter_Info .profile_Info{padding-left:0px;}
+  .charter_Info .profile_Info .accountantInfo li .profiIcon{ position: inherit;}
+  .pageTitle{ padding-top:0px;}
+  load_form .d-inline-block{display:block !important;}
+  .d-inline-block.mL44 {margin-left: 0px !important;}
+  label{white-space: inherit;}
+  
+  .access-form .form-control{ height: 40px;}
+  .access-form .searchIcon{margin-top: -19px;  font-size: 19px;  line-height: 40px;}
+  .btnBlock.pdT37{padding-top:0px;}
+  .accesorials-SubmissionBox{
+    padding-bottom: 0;
+  }
+  .accesorials-Submission{    padding-bottom: 17px;}
+  .accesorials-Submission .viewLabel{font-size: 15px;}
+  .trackMap-main{padding: 15px;}
+  .charter_account{padding: 15px;}
+  
+
+}
+
+@media (max-width:576px) {
+.inrHeader .accLogo{width:inherit;}
+  .inrHeader .accLogo img { height: 38px;}
+  .sidebar-toggle-box{ margin-top: 7px;}
+  .m-logo{display:block;}
+  .d-logo{display: none;}
+  .inrHeader .notifaction{font-size: 23px; padding-right: 8px;}
+  .inrHeader .acountDrop .userImg { width: 35px;height: 35px;}
+  .inrHeader {padding: 0 15px;}
+  .inrHeader .searcField{padding-top:3px;}
+  .searcInput{padding: 4px 10px 4px 32px;}
+  .searcInput{width:0px;}
+  .m-pdR39{padding-right: 39px;}
+  .searcInput:focus {width: 97px;}
+  .sidebar-toggle-box{position:fixed; right:15px; top:8px;}
+  .account-header{ min-height: 58px;}
+  .page-container{padding-top: 59px;}
+  .myaccountWrapper {padding-top: 15px;}
+    .trackMap-main .map-personDetail {    padding: 15px;   position: static;   bottom: 0;   left: 0;   margin-top: 20px;}
+   
+    .submitBtn{ display: inline-block; width: 100%;}
+    .walletAmount {  padding-bottom: 15px;  }
+    .addCardBlock .cardradioMain .radioBlock .d_inline { padding-right: 20px; padding-bottom: 18px; }
+    .onlyCvvvlock { padding-top: 10px; }
+    .onlyCvvvlock .form-group {   max-width: 100%;  width: 100%;  }
+    .onlyCvvvlock .pdL35 { padding-left: 0;  width: 100%; }
+    .submit-accessorials-uploadMain{margin-bottom: 15px;}
+    .submit-accessorialsForm-main {   padding-top: 25px;}
+    .submit-accessorialsBottom-box .submit-accessorialsBottomin h4 span {  font-size: 17px;   display: block;}  
+    .submit-accessorialsBottom-box .submit-accessorialsBottomin h4{padding-bottom: 15px;}
+    .col-md-12.pLR0{padding-left: 0 !important; padding-right: 0 !important;}
+    .submit-accessorialsBottom-box{margin-bottom: 15px;}
+    .submit-accessorials-main{padding-bottom: 30px;}
+    .page-container > .container-fluid{
+      padding-left: 0 !important; padding-right: 0 !important;
+    }
+}

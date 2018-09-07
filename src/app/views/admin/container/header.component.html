@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
+  <div class="container-fluid">
+    <div class="navbar-wrapper">{{ pageTitle }}</div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="navbar-toggler-icon icon-bar"></span>
+      <span class="navbar-toggler-icon icon-bar"></span>
+      <span class="navbar-toggler-icon icon-bar"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown" dropdown>
+          <button class="btn nav-link btn-link" dropdownToggle data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="material-icons">person</i>
+            <p class="d-lg-none d-md-block"> Account </p>
+          </button>
+          <div class="dropdown-menu dropdown-menu-right" *dropdownMenu aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" routerLink="/admin/profile/change-password"><i class="material-icons">vpn_key</i>  Change Password</a>
+            <a class="dropdown-item" (click)="logOut()"><i class="material-icons">input</i>  Log Out</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

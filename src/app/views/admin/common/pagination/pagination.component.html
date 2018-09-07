@@ -1,0 +1,21 @@
+<div class="dataTables_paginate paging_full_numbers" id="datatables_paginate" [hidden]="countPages <= 1">
+  <ul class="pagination">
+    <li class="paginate_button page-item first" id="datatables_first" [ngClass]="{disabled: page === 1}" (click)="page === 1 ? noOp() :onPageChange(1)">
+      <span aria-controls="datatables" class="page-link">First</span>
+    </li>
+    <li class="paginate_button page-item previous" id="datatables_previous" [ngClass]="{disabled: !hasPrev}" (click)="!hasPrev ? noOp() : onPageChange(page-1)">
+      <span aria-controls="datatables" class="page-link">Previous</span>
+    </li>
+
+    <li class="paginate_button page-item" [ngClass]="{active: page == minPage + i}" *ngFor="let x of iterator; let i = index;" (click)="onPageChange(minPage + i)">
+      <span aria-controls="datatables" class="page-link">{{minPage+i}}</span>
+    </li>
+
+    <li class="paginate_button page-item next" id="datatables_next" [ngClass]="{disabled: !hasNext}" (click)="!hasNext ? noOp() : onPageChange(page+1)">
+      <span aria-controls="datatables" class="page-link">Next</span>
+    </li>
+    <li class="paginate_button page-item last" id="datatables_last" [ngClass]="{disabled: page === countPages}" (click)="page === countPages ? noOp() :onPageChange(countPages)">
+      <span aria-controls="datatables" class="page-link">Last</span>
+    </li>
+  </ul>
+</div>
